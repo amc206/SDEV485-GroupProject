@@ -1,26 +1,16 @@
 #main
 {
-    /*margin-left: 15%;
-    margin-right: 15%;*/
     background-color: white;
 }
 .jumbotron
 {
-    /*background-color: rgba(0, 0, 0, 0.58);*/
-    background-color: black;
+    background-color: lightsteelblue;
 }
 
-/*.center
+/*body
 {
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: black;
 }*/
-
-body
-{
-    background-color: black;
-}
 
 h1.display-4
 {
@@ -36,6 +26,6 @@ h2.display-4
 
 .btn-primary
 {
-    background-color: black;
+    background-color: lightblue;
     border-color: white;
 }
