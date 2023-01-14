@@ -29,3 +29,14 @@ h2.display-4
     background-color: lightblue;
     border-color: white;
 }
+
+form.input#save
+{
+    background-color: lightblue;
+    border-color: white;
+}
+
+.form-group
+{
+    font-weight: bold;
+}
