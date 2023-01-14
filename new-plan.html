@@ -6,19 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/PBI-1-styles.css">
-    <title>PBI 1</title>
+    <link rel="stylesheet" href="../styles/PBI-1-styles.css">
+    <title>Student Plan</title>
 </head>
 <body>
 <div id ="main" class ="container">
-    <div class="jumbotron jumbotron">
-        <h1 class="display-4 bg-light">Advise-It</h1>
-        <h2 class="display-4"><b>Home</b></h2>
-    </div>
+  <div class="jumbotron jumbotron">
+      <h2 class="display-4"><center><b>New Plan</b></center></h2>
+  </div>
+
+    <form action="/action_page.php">
+        <p><label for="fall">Fall:</label></p>
+        <textarea id="fall" name="winter" rows="4" cols="50"></textarea>
+        <br>
+        <!--<input type="submit" value="Save">-->
+        <p><label for="winter">Winter:</label></p>
+        <textarea id="winter" name="winter" rows="4" cols="50"></textarea>
+        <br>
+
+        <p><label for="spring">Spring:</label></p>
+        <textarea id="spring" name="spring" rows="4" cols="50"></textarea>
+        <br>
+
+        <p><label for="summer">Summer:</label></p>
+        <textarea id="summer" name="summer" rows="4" cols="50"></textarea>
+        <br>
+    </form>
 
 
-    <a class="btn-primary" href="../new-plan.html" role="button" id="newplan">Create New Plan</a>
-    <!--<button type="submit" onsubmit="/new-plan.html" class="btn-primary">Create New Plan</button>-->
+
+  <button type="submit" onsubmit="" class="btn-primary">Save</button>
 </div>
 
 <script src="scripts/PBI-1-scripts.js"></script>
