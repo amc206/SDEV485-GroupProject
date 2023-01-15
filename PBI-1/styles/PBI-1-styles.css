@@ -1,6 +1,7 @@
 #main
 {
     background-color: white;
+    padding-bottom: 3em;
 }
 .jumbotron
 {
@@ -30,7 +31,7 @@ h2.display-4
     border-color: white;
 }
 
-form.input#save
+input#save
 {
     background-color: lightblue;
     border-color: white;
