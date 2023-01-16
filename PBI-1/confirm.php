@@ -22,6 +22,10 @@ error_reporting(E_ALL);
         <p><code id="output"></code></p>
     </div>
 
+    <div id="print">
+        <button onclick="window.print()">Print</button>
+    </div>
+
 
 <?php
 
