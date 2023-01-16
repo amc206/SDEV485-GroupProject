@@ -30,10 +30,10 @@ $winter = $_GET['winter'];
 $spring = $_GET['spring'];
 $summer = $_GET['summer'];
 
-echo "<p>Fall: $fall</p>";
-echo "<p>Winter: $winter</p>";
-echo "<p>Spring: $spring</p>";
-echo "<p>Summer: $summer</p>";
+echo "<p><b>Fall:</b> $fall</p>";
+echo "<p><b>Winter:</b> $winter</p>";
+echo "<p><b>Spring:</b> $spring</p>";
+echo "<p><b>Summer:</b> $summer</p>";
 
 
 
