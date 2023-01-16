@@ -25,16 +25,24 @@ h2.display-4
     color: white;
 }
 
-.btn.btn-primary
+a.btn.btn-info.btn-lg
 {
     background-color: lightblue;
     border-color: white;
 }
 
-input#save
+a#generate.btn.btn-primary
 {
     background-color: lightblue;
     border-color: white;
+}
+
+button.btn-primary
+{
+    background-color: lightblue;
+    border-color: white;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .form-group

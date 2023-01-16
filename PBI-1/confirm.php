@@ -41,10 +41,10 @@ error_reporting(E_ALL);
     $spring = $_GET['spring'];
     $summer = $_GET['summer'];
 
-    echo "<p><b>Fall:</b> $fall</p>";
-    echo "<p><b>Winter:</b> $winter</p>";
-    echo "<p><b>Spring:</b> $spring</p>";
-    echo "<p><b>Summer:</b> $summer</p>";
+    echo "<p><font size='12'><b>Fall:</b> $fall</font></p>";
+    echo "<p><font size='12'><b>Winter:</b> $winter</font></p>";
+    echo "<p><font size='12'><b>Spring:</b> $spring</font></p>";
+    echo "<p><font size='12'><b>Summer:</b> $summer</font></p>";
 
 
 
