@@ -31,9 +31,10 @@ error_reporting(E_ALL);
             </a>
         </div>
 
-        <p>Last Updated: <input type="datetime-local" id="timestamp" name="timestamp"></p>
 
     </div>
+
+    <p>Last Updated: <input type="datetime-local" id="timestamp" name="timestamp"></p>
 
     <?php
 

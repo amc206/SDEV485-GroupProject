@@ -4,6 +4,12 @@
     padding-bottom: 3em;
     font-size: 12px;
 }
+
+body
+{
+    background-color: lightsteelblue;
+}
+
 .jumbotron
 {
     background-color: lightsteelblue;
