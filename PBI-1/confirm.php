@@ -31,18 +31,20 @@ error_reporting(E_ALL);
             </a>
         </div>
 
+        <p>Last Updated: <input type="datetime-local" id="timestamp" name="timestamp"></p>
+
     </div>
 
     <?php
 
-    $time = $_GET['timestamp'];
+
     $fall = $_GET['fall'];
     $winter = $_GET['winter'];
     $spring = $_GET['spring'];
     $summer = $_GET['summer'];
 
 
-    echo "<p><b>Last Updated:</b> $time</p>";
+
     echo "<p><b>Fall:</b> $fall</p>";
     echo "<p><b>Winter:</b> $winter</p>";
     echo "<p><b>Spring:</b> $spring</p>";
