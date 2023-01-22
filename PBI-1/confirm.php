@@ -14,7 +14,7 @@ error_reporting(E_ALL);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/PBI-1-styles.css">
-    <title>Confirmation</title>
+    <title>Confirm</title>
 
 </head>
 <body>
@@ -38,36 +38,15 @@ error_reporting(E_ALL);
 
     <?php
 
-    /*
-    session_start();
-    if ($_SERVER['REQUEST_METHOD'] !== 'POST')
-    {
-        exit('Bad Request');
-    }
+        $fall = $_GET['fall'];
+        $winter = $_GET['winter'];
+        $spring = $_GET['spring'];
+        $summer = $_GET['summer'];
 
-    if ($_SESSION['formtoken'] !== $_POST['formtoken'])
-    {
-        exit('Bad Token');
-    }
-
-    if (time() > $_SESSION['formtoken_time'] + 60 * 5)
-    {
-        exit('Refresh and try again.');
-    }*/
-
-    $token = $_GET['formtoken'];
-    $fall = $_GET['fall'];
-    $winter = $_GET['winter'];
-    $spring = $_GET['spring'];
-    $summer = $_GET['summer'];
-
-    echo "<p><b>Token: </b> $token</p>";
-    echo "<p><b>Fall:</b> $fall</p>";
-    echo "<p><b>Winter:</b> $winter</p>";
-    echo "<p><b>Spring:</b> $spring</p>";
-    echo "<p><b>Summer:</b> $summer</p>";
-
-
+        echo "<p><b>Fall:</b> $fall</p>";
+        echo "<p><b>Winter:</b> $winter</p>";
+        echo "<p><b>Spring:</b> $spring</p>";
+        echo "<p><b>Summer:</b> $summer</p>";
 
     ?>
 

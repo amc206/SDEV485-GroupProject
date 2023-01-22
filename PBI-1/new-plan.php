@@ -34,24 +34,24 @@
 
         <fieldset class="form-group">
             <div class="form-group">
-                <p><label for="fall">Fall:</label></p>
-                <textarea id="fall" name="fall" rows="4" cols="50"></textarea>
+                <p><label for="fall2">Fall:</label></p>
+                <textarea id="fall2" name="fall2" rows="4" cols="50"></textarea>
             </div>
                 <!--<br>-->
             <div class="form-group">
-                <p><label for="winter">Winter:</label></p>
-                <textarea id="winter" name="winter" rows="4" cols="50"></textarea>
+                <p><label for="winter2">Winter:</label></p>
+                <textarea id="winter2" name="winter2" rows="4" cols="50"></textarea>
                 <!--<br>-->
             </div>
             <div class="form-group">
-                <p><label for="spring">Spring:</label></p>
-                <textarea id="spring" name="spring" rows="4" cols="50"></textarea>
+                <p><label for="spring2">Spring:</label></p>
+                <textarea id="spring2" name="spring2" rows="4" cols="50"></textarea>
                 <!--<br>-->
             </div>
 
             <div class="form-group">
-                <p><label for="summer">Summer:</label></p>
-                <textarea id="summer" name="summer" rows="4" cols="50"></textarea>
+                <p><label for="summer2">Summer:</label></p>
+                <textarea id="summer2" name="summer2" rows="4" cols="50"></textarea>
                 <!--<br>-->
             </div>
         </fieldset>
