@@ -17,16 +17,16 @@
         <p><code id="output"></code></p>
     </div>
 
+    <!--<p>Last Updated: <input type="datetime-local" id="timestamp" name="timestamp"></p>-->
+
     <?
     session_start();
-    function createFormToken()
-    {
+    function createFormToken() {
         $_SESSION['formtoken'] = md5(uniqid(rand(), TRUE));
         $_SESSION['formtoken_time'] = time();
         return $_SESSION['formtoken'];
     }
     ?>
-    <!--<p>Last Updated: <input type="datetime-local" id="timestamp" name="timestamp"></p>-->
 
     <form id="new-plan" action="confirm.php" method="post">
 

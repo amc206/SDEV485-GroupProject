@@ -37,8 +37,9 @@ error_reporting(E_ALL);
     <p>Last Updated: <input type="datetime-local" id="timestamp" name="timestamp"></p>
 
     <?php
-    session_start();
 
+    /*
+    session_start();
     if ($_SERVER['REQUEST_METHOD'] !== 'POST')
     {
         exit('Bad Request');
@@ -52,15 +53,15 @@ error_reporting(E_ALL);
     if (time() > $_SESSION['formtoken_time'] + 60 * 5)
     {
         exit('Refresh and try again.');
-    }
+    }*/
 
+    $token = $_GET['formtoken'];
     $fall = $_GET['fall'];
     $winter = $_GET['winter'];
     $spring = $_GET['spring'];
     $summer = $_GET['summer'];
 
-
-
+    echo "<p><b>Token: </b> $token</p>";
     echo "<p><b>Fall:</b> $fall</p>";
     echo "<p><b>Winter:</b> $winter</p>";
     echo "<p><b>Spring:</b> $spring</p>";
