@@ -17,9 +17,21 @@
         <p><code id="output"></code></p>
     </div>
 
+    <?
+    session_start();
+    function createFormToken()
+    {
+        $_SESSION['formtoken'] = md5(uniqid(rand(), TRUE));
+        $_SESSION['formtoken_time'] = time();
+        return $_SESSION['formtoken'];
+    }
+    ?>
     <!--<p>Last Updated: <input type="datetime-local" id="timestamp" name="timestamp"></p>-->
 
     <form id="new-plan" action="confirm.php" method="post">
+
+        <input type="hidden" name="formtoken" value="<?php echo createFormToken(); ?>">
+
         <fieldset class="form-group">
             <div class="form-group">
                 <p><label for="fall">Fall:</label></p>
