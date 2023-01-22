@@ -1,20 +1,21 @@
-(function() {
+(function()
+{
     function IDGenerator() {
 
         this.length = 8;
         this.timestamp = +new Date;
 
-        var _getRandomInt = function( min, max ) {
+        let _getRandomInt = function( min, max ) {
             return Math.floor( Math.random() * ( max - min + 1 ) ) + min;
         }
 
         this.generate = function() {
-            var ts = this.timestamp.toString();
-            var parts = ts.split( "" ).reverse();
-            var id = "";
+            let ts = this.timestamp.toString();
+            let parts = ts.split( "" ).reverse();
+            let id = "";
 
-            for( var i = 0; i < this.length; ++i ) {
-                var index = _getRandomInt( 0, parts.length - 1 );
+            for( let i = 0; i < this.length; ++i ) {
+                let index = _getRandomInt( 0, parts.length - 1 );
                 id += parts[index];
             }
 
@@ -26,11 +27,11 @@
 
 
     document.addEventListener( "DOMContentLoaded", function() {
-        var btn = document.querySelector( "#generate" ),
+        let btn = document.querySelector( "#generate" ),
             output = document.querySelector( "#output" );
 
         btn.addEventListener( "click", function() {
-            var generator = new IDGenerator();
+            let generator = new IDGenerator();
             output.innerHTML = generator.generate();
 
         }, false);
@@ -38,3 +39,10 @@
     });
 
 })();
+
+function generateIdentifier(): string
+{
+    $n = 3;
+    return bin2hex(random_bytes($n));
+}
+
