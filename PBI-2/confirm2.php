@@ -46,9 +46,8 @@
     ?>
 
     <?php if (isset($success) && $success){ ?>
-    <h1>Thank You</h1>
-    Your plan has been sent.
-        <br>
+    <h1>See Your Plan Below:</h1>
+
 
         <?php
         $advisor = $_POST['advisor'];
