@@ -34,9 +34,14 @@ if (isset($_POST['send'])){
         <p><code id="output"></code></p>
     </div>
 
-    <h1>Thank You</h1> <p>Your message has been sent.</p>
+    <?php if (isset($success) && $success){ ?>
+    <h1>Thank You</h1>
+    Your message has been sent.
+    <?php } else { ?>
     <h1>Oops!</h1>
-    <p>Sorry, there was a problem sending your message.</p>
+    Sorry, there was a problem sending your message.
+    <?php } ?>
+
 
 
 </div>

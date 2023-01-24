@@ -7,12 +7,12 @@
 
 body
 {
-    background-color: lightsteelblue;
+    background-color: lightgreen;
 }
 
 .jumbotron
 {
-    background-color: lightsteelblue;
+    background-color: lightgreen;
 }
 
 /*body
@@ -34,19 +34,19 @@ h2.display-4
 
 a.btn.btn-info.btn-lg
 {
-    background-color: lightblue;
+    background-color: seagreen;
     border-color: white;
 }
 
 a#generate.btn.btn-primary
 {
-    background-color: lightblue;
+    background-color: seagreen;
     border-color: white;
 }
 
 button.btn-primary
 {
-    background-color: lightblue;
+    background-color: seagreen;
     border-color: white;
     border-radius: 8px;
     padding: 20px;
