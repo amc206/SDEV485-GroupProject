@@ -1,20 +1,3 @@
-<?php
-if (isset($_POST['send'])){
-    $to = 'campos.angel@student.greenriver.edu'; //email address
-    $subject = 'Student Plan';
-
-    $message = 'Advisor: ' . $_POST['advisor'] . "\r\n\r\n";
-    $message .= 'Student Name: ' . $_POST['name'] . "\r\n\r\n";
-    $message .= 'Fall: ' . $_POST['fall'] . "\r\n\r\n";
-    $message .= 'Winter: ' . $_POST['winter'] . "\r\n\r\n";
-    $message .= 'Spring: ' . $_POST['spring'] . "\r\n\r\n";
-    $message .= 'Summer: ' . $_POST['summer'] . "\r\n\r\n";
-
-
-    $success = mail($to, $subject, $message);
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +16,23 @@ if (isset($_POST['send'])){
         <h2 class="display-4"><center><b>New Plan</b></center></h2>
         <p><code id="output"></code></p>
     </div>
+
+    <?php
+    if (isset($_POST['send'])){
+        $to = 'campos.angel@student.greenriver.edu'; //email address
+        $subject = 'Student Plan';
+
+        $message = 'Advisor: ' . $_POST['advisor'] . "\r\n\r\n";
+        $message .= 'Student Name: ' . $_POST['name'] . "\r\n\r\n";
+        $message .= 'Fall: ' . $_POST['fall'] . "\r\n\r\n";
+        $message .= 'Winter: ' . $_POST['winter'] . "\r\n\r\n";
+        $message .= 'Spring: ' . $_POST['spring'] . "\r\n\r\n";
+        $message .= 'Summer: ' . $_POST['summer'];
+
+        echo $message;
+        //$success = mail($to, $subject, $message);
+    }
+    ?>
 
     <?php if (isset($success) && $success){ ?>
     <h1>Thank You</h1>
