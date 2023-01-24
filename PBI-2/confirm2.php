@@ -16,21 +16,11 @@
         <h2 class="display-4"><center><b>New Plan</b></center></h2>
         <p><code id="output"></code></p>
     </div>
-    <div id="print">
-        <!--<button onclick="window.print()">Print</button>-->
-        <a class="btn btn-info btn-lg" onclick="window.print()">
-            <span class="glyphicon glyphicon-print">Print</span>
-        </a>
-    </div>
 
-
-
-
-    <p>Last Updated: <input type="datetime-local" id="timestamp" name="timestamp"></p>
 
     <?php
     if (isset($_POST['send'])){
-        $to = 'campos.angel@student.greenriver.edu'; //email address
+        $to = 'email'; //email address
         $subject = 'Student Plan';
 
         $message = 'Advisor: ' . $_POST['advisor'] . "\r\n\r\n";
@@ -41,11 +31,19 @@
         $message .= 'Summer: ' . $_POST['summer'];
 
         //echo $message;
-        $success = mail($to, $subject, $message);
+        $success = mail($to, $subject, $message,'-campos.angel@student.greenriver.edu');
     }
     ?>
 
     <?php if (isset($success) && $success){ ?>
+        <div id="print">
+            <!--<button onclick="window.print()">Print</button>-->
+            <a class="btn btn-info btn-lg" onclick="window.print()">
+                <span class="glyphicon glyphicon-print">Print</span>
+            </a>
+        </div>
+
+        <p>Last Updated: <input type="datetime-local" id="timestamp" name="timestamp"></p>
     <h1>See Your Plan Below:</h1>
 
 
