@@ -16,6 +16,17 @@
         <h2 class="display-4"><center><b>New Plan</b></center></h2>
         <p><code id="output"></code></p>
     </div>
+    <div id="print">
+        <!--<button onclick="window.print()">Print</button>-->
+        <a class="btn btn-info btn-lg" onclick="window.print()">
+            <span class="glyphicon glyphicon-print">Print</span>
+        </a>
+    </div>
+
+
+
+
+    <p>Last Updated: <input type="datetime-local" id="timestamp" name="timestamp"></p>
 
     <?php
     if (isset($_POST['send'])){
@@ -37,6 +48,23 @@
     <?php if (isset($success) && $success){ ?>
     <h1>Thank You</h1>
     Your plan has been sent.
+        <br>
+
+        <?php
+        $advisor = $_POST['advisor'];
+        $name = $_POST['name'];
+        $fall = $_POST['fall'];
+        $winter = $_POST['winter'];
+        $spring = $_POST['spring'];
+        $summer = $_POST['summer'];
+
+        echo "<p><b>Advisor:</b> $advisor</p>";
+        echo "<p><b>Student Name:</b> $name</p>";
+        echo "<p><b>Fall:</b> $fall</p>";
+        echo "<p><b>Winter:</b> $winter</p>";
+        echo "<p><b>Spring:</b> $spring</p>";
+        echo "<p><b>Summer:</b> $summer</p>";
+        ?>
     <?php } else { ?>
     <h1>Oops!</h1>
     Sorry, there was a problem.
