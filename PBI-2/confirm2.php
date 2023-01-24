@@ -36,10 +36,10 @@
 
     <?php if (isset($success) && $success){ ?>
     <h1>Thank You</h1>
-    Your message has been sent.
+    Your plan has been sent.
     <?php } else { ?>
     <h1>Oops!</h1>
-    Sorry, there was a problem sending your message.
+    Sorry, there was a problem.
     <?php } ?>
 
 
