@@ -29,8 +29,8 @@
         $message .= 'Spring: ' . $_POST['spring'] . "\r\n\r\n";
         $message .= 'Summer: ' . $_POST['summer'];
 
-        echo $message;
-        //$success = mail($to, $subject, $message);
+        //echo $message;
+        $success = mail($to, $subject, $message);
     }
     ?>
 
