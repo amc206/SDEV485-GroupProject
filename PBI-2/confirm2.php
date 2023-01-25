@@ -24,7 +24,7 @@
         $subject = 'Student Plan';
 
         $message = 'Advisor: ' . $_POST['advisor'] . "\r\n\r\n";
-        $message .= 'Student Name: ' . $_POST['name'] . "\r\n\r\n";
+        //$message .= 'Student Name: ' . $_POST['name'] . "\r\n\r\n";
         $message .= 'Fall: ' . $_POST['fall'] . "\r\n\r\n";
         $message .= 'Winter: ' . $_POST['winter'] . "\r\n\r\n";
         $message .= 'Spring: ' . $_POST['spring'] . "\r\n\r\n";
@@ -49,14 +49,14 @@
 
         <?php
         $advisor = $_POST['advisor'];
-        $name = $_POST['name'];
+        //$name = $_POST['name'];
         $fall = $_POST['fall'];
         $winter = $_POST['winter'];
         $spring = $_POST['spring'];
         $summer = $_POST['summer'];
 
         echo "<p><b>Advisor:</b> $advisor</p>";
-        echo "<p><b>Student Name:</b> $name</p>";
+        //echo "<p><b>Student Name:</b> $name</p>";
         echo "<p><b>Fall:</b> $fall</p>";
         echo "<p><b>Winter:</b> $winter</p>";
         echo "<p><b>Spring:</b> $spring</p>";

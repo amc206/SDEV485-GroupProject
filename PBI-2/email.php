@@ -25,15 +25,15 @@
                 <textarea id="advisor" name="advisor" rows="1" cols="20"></textarea>
             </div>
 
-            <div class = "form-group">
+            <!--<div class = "form-group">
                 <p><label for="name">Student Name:</label></p>
                 <textarea id="name" name="name" rows="1" cols="20"></textarea>
-            </div>
+            </div>-->
 
-            <div class="form-group">
+            <!--<div class="form-group">
                 <p><label for="email">Student Email:</label></p>
                 <input type="email" name="email" id="email">
-            </div>
+            </div>-->
 
             <div class="form-group">
                 <p><label for="fall">Fall:</label></p>
