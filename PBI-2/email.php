@@ -14,6 +14,10 @@
 <div id ="main" class ="container">
     <div class="jumbotron">
         <h2 class="display-4"><center><b>New Plan</b></center></h2>
+    </div>
+
+    <div class="token">
+        <p><button id="generate">Generate</button></p>
         <p><code id="output"></code></p>
     </div>
 
