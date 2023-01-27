@@ -1,0 +1,87 @@
+#address-block {
+    display: none;
+}
+
+.err {
+    color: darkred;
+    display: none;
+}
+
+body {
+    background-color: darkred;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+#main {
+    background-color: white;
+    padding-bottom: 3em;
+}
+
+legend {
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: darkgreen;
+}
+
+fieldset {
+    color: darkgreen;
+}
+
+label {
+    color: black;
+}
+
+.btn-primary {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+/*#main
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+}*/
+
+/*body
+{
+    margin: 0;
+    background-color: darkred;
+    display: block;
+}*/
+
+/*h1.display-4
+{
+    font-weight: 300;
+    color: darkgreen;
+}*/
+
+/*p.lead
+{
+    font-style: italic;
+}*/
+
+/*a
+{
+    color: white;
+}*/
+
+/*legend.col-form-label
+{
+    color: darkgreen;
+    font-variant: small-caps;
+    font-size: 24px;
+}*/
+
+/*fieldset
+{
+
+    border: 1px solid darkgreen;
+    padding: 10px;
+}*/
+
+
