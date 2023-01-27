@@ -15,6 +15,12 @@ body
     background-color: green;
 }
 
+code#output
+{
+    border-style: solid;
+}
+
+
 /*body
 {
     background-color: black;
