@@ -23,8 +23,7 @@
 
     <form action="confirm3.php" method="post">
 
-
-        <fieldset class="form-group">
+        <fieldset class="form-group align-content-center">
             <div class="form-group">
                 <p><label for="advisor">Advisor:</label></p>
                 <textarea id="advisor" name="advisor" rows="1" cols="20"></textarea>
