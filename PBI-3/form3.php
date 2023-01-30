@@ -21,7 +21,7 @@
         <p><code id="output"></code></p>
     </div>
 
-    <form action="confirm3.php" method="post">
+    <form id="form3" action="confirm3.php" method="post">
 
         <fieldset class="form-group">
             <div class="form-group">
