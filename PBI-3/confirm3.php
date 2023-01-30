@@ -17,6 +17,16 @@
         <p><code id="output"></code></p>
     </div>
 
+    <!--<div class="results-link social-sharing">
+        <h2>
+            Direct link to your results:						</h2>
+
+        <form style="margin-top:0px;padding-top:0px;" class="results-link">
+            <input id="result" type="text" name="link" value="https://www.41q.com/type.41q?p=14676346" onclick="this.focus();this.select();">
+        </form>
+    </div>-->
+
+</div>
 
     <?php
     if (isset($_POST['send'])){
