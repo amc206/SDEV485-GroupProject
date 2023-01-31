@@ -16,12 +16,14 @@
         <h2 class="display-4"><center><b>New Plan</b></center></h2>
     </div>
 
-    <div class="token">
-        <p><button id="generate">Generate</button></p>
-        <p><code id="output"></code></p>
-    </div>
+
 
     <form id="form3" action="confirm3.php" method="post">
+
+        <div class="token">
+            <p><button id="generate">Generate</button></p>
+            <p><code id="output"></code></p>
+        </div>
 
         <fieldset class="form-group">
             <div class="form-group">
