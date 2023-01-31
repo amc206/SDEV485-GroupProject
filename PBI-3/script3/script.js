@@ -40,4 +40,12 @@
 
 })();
 
-document.getElementById("form3");
+document.getElementById("form3").onsubmit = validate;
+function validate(){
+    let advisor = document.getElementById("advisor").value;
+
+    let fall = document.getElementById("fall").value;
+    let winter = document.getElementById("winter").value;
+    let spring = document.getElementById("spring").value;
+    let summer = document.getElementById("summer").value;
+}

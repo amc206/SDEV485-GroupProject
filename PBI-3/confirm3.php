@@ -14,7 +14,6 @@
 <div id ="main" class ="container">
     <div class="jumbotron">
         <h2 class="display-4"><center><b>New Plan</b></center></h2>
-        <p><code id="output"></code></p>
     </div>
 
     <!--<div class="results-link social-sharing">
@@ -26,10 +25,10 @@
         </form>
     </div>-->
 
-</div>
+<!--</div>-->
 
-    <?php
-    if (isset($_POST['send'])){
+    <!--<//?php
+    /*if (isset($_POST['send'])){
         $to = 'email'; //email address
         $subject = 'Student Plan';
 
@@ -42,10 +41,10 @@
 
         //echo $message;
         $success = mail($to, $subject, $message,'-campos.angel@student.greenriver.edu');
-    }
-    ?>
+    }*/
+    ?>-->
 
-    <?php if (isset($success) && $success){ ?>
+    <!--<//?php if (isset($success) && $success){ ?>-->
         <div id="print">
             <!--<button onclick="window.print()">Print</button>-->
             <a class="btn btn-info btn-lg" onclick="window.print()">
@@ -72,11 +71,10 @@
         echo "<p><b>Spring:</b> $spring</p>";
         echo "<p><b>Summer:</b> $summer</p>";
         ?>
-    <?php } else { ?>
+    <!--<//?php } else { ?>
     <h1>Oops!</h1>
-    Sorry, there was a problem.
-    <?php } ?>
-
+    Sorry, there was a problem.-->
+    <!--<//?php } ?>-->
 
 
 </div>
